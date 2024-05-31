@@ -18,13 +18,11 @@ namespace WebsiteNoiBoCongTy.Data
 
         public DbSet<WebsiteNoiBoCongTy.Models.Department> Department { get; set; } = default!;
 
-        public DbSet<WebsiteNoiBoCongTy.Models.Document> Document { get; set; } = default!;
-
+       
         public DbSet<WebsiteNoiBoCongTy.Models.News> News { get; set; } = default!;
 
         public DbSet<WebsiteNoiBoCongTy.Models.Notification> Notification { get; set; } = default!;
 
-        public DbSet<WebsiteNoiBoCongTy.Models.WorkSchedule> WorkSchedule { get; set; } = default!;
 
         public DbSet<WebsiteNoiBoCongTy.Models.Room> Room { get; set; } = default!;
 

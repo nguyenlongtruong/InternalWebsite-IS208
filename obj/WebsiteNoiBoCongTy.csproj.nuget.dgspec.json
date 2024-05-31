@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\QLDA_CNTT\\code_doan_moi\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {}
+    "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {}
   },
   "projects": {
-    "D:\\QLDA_CNTT\\code_doan_moi\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {
+    "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QLDA_CNTT\\code_doan_moi\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
+        "projectUniqueName": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
         "projectName": "WebsiteNoiBoCongTy",
-        "projectPath": "D:\\QLDA_CNTT\\code_doan_moi\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
-        "packagesPath": "C:\\Users\\Hoang Khai\\.nuget\\packages\\",
-        "outputPath": "D:\\QLDA_CNTT\\code_doan_moi\\InternalWebsite-IS208\\obj\\",
+        "projectPath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Hoang Khai\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -77,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
