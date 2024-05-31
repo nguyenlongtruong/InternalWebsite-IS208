@@ -13,6 +13,7 @@
 <p> Tải cơ sở dữ liệu và chạy dữ liệu bằng SQL Sever: https://github.com/KhaiNoob/CSDL-WebNoiBo
 
 ##  3. Kết nối với cơ sở dự liệu
+<p> Clone hoặc tải code tại: https://github.com/nguyenlongtruong/InternalWebsite-IS208.git</p>
 <p> Tại file appsettings.json của dự án </p> <br>
  "ConnectionStrings": {
     "WebsiteNoiBoCongTyContext": "Data Source=DESKTOP-8RNBQGL\\SQLSERVER;Initial Catalog=WebsiteNoiBo;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
