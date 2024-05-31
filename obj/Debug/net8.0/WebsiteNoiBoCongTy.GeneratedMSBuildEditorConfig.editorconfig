@@ -122,6 +122,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlTmV3c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/ManageNotifications/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlTm90aWZpY2F0aW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/ManageNotifications/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlTm90aWZpY2F0aW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/ManageNotifications/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlTm90aWZpY2F0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/ManageNotifications/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlTm90aWZpY2F0aW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/ManageNotifications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlTm90aWZpY2F0aW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/ManageRooms/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlUm9vbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -156,6 +176,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/News/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/Notifications/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/Notifications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2F0aW9uc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/DL_E/HK2_Nam3/IS208_QLDA_CNTT/ThucHanh/DoAnDemo/InternalWebsite-IS208/Views/Shared/Components/Birthdaybar/Default.cshtml]
