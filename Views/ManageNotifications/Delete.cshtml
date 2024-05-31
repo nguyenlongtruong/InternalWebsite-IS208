@@ -1,0 +1,40 @@
+﻿@model WebsiteNoiBoCongTy.Models.Notification
+
+@{
+    ViewData["Title"] = "Xóa thông báo";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1>Xóa thông báo</h1>
+    <h3>Bạn có chắc chắn muốn xóa thông báo này?</h3>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin thông báo</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4">Tiêu đề</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Title)</dd>
+                        <dt class="col-sm-4">Nội dung</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Content)</dd>
+                        <dt class="col-sm-4">Ngày tạo</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.CreateDate)</dd>
+                        <dt class="col-sm-4">Ngày xuất bản</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.PublishDate)</dd>
+                        <dt class="col-sm-4">Người đăng</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Account.Fullname)</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="mt-4">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

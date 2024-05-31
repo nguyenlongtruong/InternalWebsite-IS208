@@ -1,0 +1,93 @@
+﻿@model IEnumerable<WebsiteNoiBoCongTy.Models.Notification>
+
+@{
+    ViewData["Title"] = "Thông báo";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebsiteNoiBoCongTy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebsiteNoiBoCongTy.styles.css" asp-append-version="true" />
+    <link href="~/css/styles.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f7f9fc; 
+        }
+        .notification-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .notification-item {
+            margin-bottom: 10px; 
+            padding: 15px; 
+            border: 1px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            background-color: #e9f2fb; 
+        }
+        .notification-item .item-header {
+            font-weight: bold;
+            font-size: 1rem; 
+            margin-bottom: 5px;
+        }
+        .notification-item .item-body {
+            font-size: 0.9rem; 
+            margin-bottom: 10px;
+        }
+        .notification-item .item-footer {
+            font-size: 0.8rem; 
+            color: #6c757d;
+        }
+        .notification-item .details-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .notification-item .details-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: #333; 
+            text-align: left; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Thông báo</h1>
+        <ul class="notification-list">
+            @foreach (var item in Model)
+            {
+                <li class="notification-item">
+                    <div class="item-header">
+                        @Html.DisplayFor(modelItem => item.Title)
+                    </div>
+                    <div class="item-body">
+                        <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                    </div>
+                    <div class="item-footer d-flex justify-content-between">
+                        <span>Ngày đăng: @Html.DisplayFor(modelItem => item.PublishDate)</span>
+                        <span>Người đăng: @Html.DisplayFor(modelItem => item.Account.Fullname)</span>
+                        <a class="details-link" asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/app.min.js"></script>
+    <link href="~/css/styles.min.css" rel="stylesheet" />
+</body>
+</html>
+        
