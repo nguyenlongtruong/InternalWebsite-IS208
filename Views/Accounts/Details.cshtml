@@ -1,0 +1,95 @@
+﻿@model WebsiteNoiBoCongTy.Models.Account
+
+@{
+    ViewData["Title"] = "Chi tiết tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebsiteNoiBoCongTy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .profile-details dt {
+            font-weight: bold;
+        }
+        .profile-details dd {
+            margin-bottom: 10px;
+        }
+        .edit-link {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="profile-header">
+            <img src="@Html.DisplayFor(model => model.PhotoURL)" alt="Avatar nhân viên">
+            <div>
+                <h1>@Html.DisplayFor(model => model.Fullname)</h1>
+                <p class="text-muted">@Html.DisplayFor(model => model.Position)</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h4>Thông tin tài khoản</h4>
+                <hr />
+                <dl class="row profile-details">
+                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Username)</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Username)</dd>
+
+                     <dt class="col-sm-3">Họ và tên</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Fullname)</dd>
+
+                    @* <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Password)</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Password)</dd> *@
+
+                     <dt class="col-sm-3">Giới tính</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Gender)</dd>
+
+                     <dt class="col-sm-3">Ngày sinh</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Birthday)</dd>
+
+                     <dt class="col-sm-3">Vị trí làm việc</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Position)</dd>
+
+                     <dt class="col-sm-3">Số điện thoại</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+                     <dt class="col-sm-3">Phòng ban</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Department.Name)</dd>
+                </dl>
+                <div class="edit-link">
+                    <a class="btn btn-primary" asp-action="Edit">Chỉnh sửa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>
