@@ -1,8 +1,361 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="TechBits, Computer Components, Tech Company" />
+  <meta name="description" content="TechBits - Leading Manufacturer of Computer Components" />
+  <meta name="author" content="TechBits" />
+  <link rel="shortcut icon" href="/images/favicon.png" type="">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+  <title> TechBits </title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .footer_social a {
+      font-size: 24px; 
+      margin: 0 10px;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    .footer_social a:hover {
+      color: #f8b400; 
+    }
+
+    .form_container form {
+      display: flex;
+      margin-top: 10px;
+      flex-direction: column;
+      align-items: center; 
+    }
+
+    .form_container form input, .form_container form button, .form_container form textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%; 
+      max-width: 400px; 
+    }
+
+    .form_container form input::placeholder, .form_container form textarea::placeholder {
+      color: #888;
+    }
+
+    .form_container form button {
+      background-color: #f8b400;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .form_container form button:hover {
+      background-color: #ff9800;
+    }
+
+    .footer_social a {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #00f; 
+      transition: color 0.3s;
+    }
+
+    .footer_social a:hover {
+      color: #00a; 
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="~/images/hero-bg-techbits.jpg" alt="TechBits Background">
+      </div>
+    </div>
+
+    <!-- slider section -->
+    <section class="slider_section">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="detail-box">
+                    <h1>
+                      Linh kiện máy tính <br>
+                      Áp dụng công nghệ tiên tiến
+                    </h1>
+                    <p>
+                      Sản xuất linh kiện máy tính với công nghệ mới nhất đến từ TechBits. Chúng tôi cung cấp các giải pháp nâng cao cho mọi nhu cầu công nghệ cho máy tính của bạn.
+                    </p>
+                    @* <div class="btn-box">
+                      <a href="" class="btn1">
+                        Learn More
+                      </a>
+                    </div> *@
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="~/images/slider-img-techbits.jpg" alt="TechBits Products">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more carousel items as needed -->
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <!-- Add more indicators as needed -->
+        </ol>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Các sản phẩm <span>của chúng tôi</span>
+          </h2>
+          <p>
+            Chúng tôi cung cấp một loạt các sản phẩm để đáp ứng nhu cầu của khách hàng.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="/images/service1.jpg" alt="PC Screen">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Màn hình máy tính
+                </h5>
+                <p>
+                  Cung cấp màn hình với độ phân giải cao, tần số quét xuất sắc cùng chất lượng tuyệt màn hình tuyệt vời.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="/images/service2.jpg" alt="Component Build">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  PC Build
+                </h5>
+                <p>
+                  PC được build sẵn sàng đề bạn dùng với cấu hình cực cao, với linh kiện sản xuất từ chính TechBits.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="/images/service3.png" alt="Other Product">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Các sản phẩm khác
+                </h5>
+                <p>
+                  Rất nhiều các sản phẩm khác như bàn phím, tay nghe, chuột máy tính,... được sản xuất từ chúng tôi.
+                </p>
+                <a href ="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-box">
+          <a href="">
+            View All
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h1>
+          <span>About Us</span>
+        </h1>
+        <p>
+         Tại TechBits, chúng tôi tận tâm cung cấp các linh kiện máy tính chất lượng cao nhất.
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="~/images/Logo_TechBits.png" alt="About TechBits">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h3>
+              Chúng tôi là TechBits
+            </h3>
+            <p>
+              Với nhiều năm kinh nghiệm trong ngành, TechBits đã trở thành một cái tên đáng tin cậy trong thế giới linh kiện máy tính. Cam kết của chúng tôi đối với sự đổi mới và sự hài lòng của khách hàng khiến chúng tôi trở nên khác biệt.
+            </p>
+            <a href="">
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Nhận thông tin<span> từ chúng tôi</span>
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" placeholder="Name" />
+              </div>
+              <div>
+                <input type="text" placeholder="Phone number" />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" />
+              </div>
+              <div>
+                <textarea class="message-box" placeholder="Message"></textarea>
+              </div>
+              <div class="btn-box">
+                <button type="submit">
+                  Gửi
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <footer class="footer_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <div class="footer_contact">
+            <h4>Địa chỉ</h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Đại học Công nghệ Thông tin - ĐHQG TP.HCM</span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>Call +84 1234567890</span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>Techbits@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_detail">
+            <a href="" class="footer-logo">TechBits</a>
+            <p>Cung cấp các giải pháp linh kiện máy tính cải tiến kể từ 2003.</p>
+            <div class="footer_social">
+              <a href="">
+                <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 footer-col">
+          <div class="footer_subscribe">
+            <h4>Subscribe</h4>
+            <form action="">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-info">
+        <p>&copy; <span id="displayYear"></span> All Rights Reserved By TechBits</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="/js/custom.js"></script>
+
+</body>
+</html>
