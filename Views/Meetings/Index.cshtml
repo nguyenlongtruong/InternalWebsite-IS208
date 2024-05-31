@@ -1,0 +1,109 @@
+﻿@model IEnumerable<WebsiteNoiBoCongTy.Models.Meeting>
+
+@{
+    ViewData["Title"] = "Lịch phòng họp";
+
+    // Lấy tháng và năm từ query string, mặc định là tháng hiện tại
+    var currentMonth = !String.IsNullOrEmpty(ViewContext.HttpContext.Request.Query["month"]) ? int.Parse(ViewContext.HttpContext.Request.Query["month"]) : DateTime.Now.Month;
+    var currentYear = !String.IsNullOrEmpty(ViewContext.HttpContext.Request.Query["year"]) ? int.Parse(ViewContext.HttpContext.Request.Query["year"]) : DateTime.Now.Year;
+
+    // Tính số ngày trong tháng hiện tại
+    var daysInMonth = DateTime.DaysInMonth(currentYear, currentMonth);
+
+    // Nhóm các cuộc họp theo ngày
+    var meetings = Model.GroupBy(m => m.StartTime.Date);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebsiteNoiBoCongTy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebsiteNoiBoCongTy.styles.css" asp-append-version="true" />
+    <link href="~/css/styles.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f0f8ff;
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 10px;
+        }
+        .day {
+            padding: 20px;
+            border: 1px solid #ddd;
+            position: relative;
+            background-color: #fff;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .day.has-meeting {
+            background-color: #e6f7ff;
+            border-color: #007bff;
+        }
+        .day:hover .meeting-info {
+            display: block;
+        }
+        .meeting-info {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 100;
+        }
+        .meeting-info h5 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Lịch phòng họp</h1>
+        <div class="d-flex justify-content-between mb-4">
+            <a href="?month=@(currentMonth == 1 ? 12 : currentMonth - 1)&year=@(currentMonth == 1 ? currentYear - 1 : currentYear)" class="btn btn-primary"> < </a>
+            <h2>@currentMonth/@currentYear</h2>
+            <a href="?month=@(currentMonth == 12 ? 1 : currentMonth + 1)&year=@(currentMonth == 12 ? currentYear + 1 : currentYear)" class="btn btn-primary"> > </a>
+        </div>
+        <div class="calendar">
+            @for (int day = 1; day <= daysInMonth; day++)
+            {
+                var date = new DateTime(currentYear, currentMonth, day);
+                var dayMeetings = meetings.FirstOrDefault(m => m.Key == date);
+                <div class="day @(dayMeetings != null ? "has-meeting" : "")">
+                    @day
+                    @if (dayMeetings != null)
+                    {
+                        var meeting = dayMeetings.FirstOrDefault();
+                        <div class="meeting-info">
+                            <h5>@meeting.Subject</h5>
+                            <p><strong>Thời gian bắt đầu:</strong> @meeting.StartTime.ToShortTimeString()</p>
+                            <p><strong>Thời gian kết thúc:</strong> @meeting.EndTime.ToShortTimeString()</p>
+                            <p><strong>Phòng:</strong> @meeting.Room.RoomCode</p>
+                            <p><strong>Phòng ban:</strong> @meeting.Department.Name</p>
+                            <a href="@Url.Action("Details", new { id = meeting.Id })" class="btn btn-primary btn-sm">Xem chi tiết</a>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/app.min.js"></script>
+</body>
+</html>
