@@ -1,0 +1,8 @@
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.GeneratedMSBuildEditorConfig.editorconfig
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.AssemblyInfoInputs.cache
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.AssemblyInfo.cs
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.csproj.CoreCompileInputs.cache
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.MvcApplicationPartsAssemblyInfo.cache
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.RazorAssemblyInfo.cache
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.RazorAssemblyInfo.cs
+D:\DL_E\HK2_Nam3\IS208_QLDA_CNTT\ThucHanh\InternalWebsite\obj\Debug\net8.0\InternalWebsite.sourcelink.json

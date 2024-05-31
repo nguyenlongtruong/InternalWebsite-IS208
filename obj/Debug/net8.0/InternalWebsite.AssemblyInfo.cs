@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InternalWebsite")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8288160825e8b9dc452453645ed5882e973e928")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82d1c82b94f439c6fa243a592edebfc4c1ae49f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("InternalWebsite")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InternalWebsite")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
