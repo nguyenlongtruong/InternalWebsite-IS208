@@ -1,0 +1,32 @@
+﻿@model WebsiteNoiBoCongTy.Models.Room
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Phòng";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1>Chỉnh sửa Phòng</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+                <div class="form-group">
+                    <label asp-for="RoomCode" class="control-label">Mã Phòng</label>
+                    <input asp-for="RoomCode" class="form-control" />
+                    <span asp-validation-for="RoomCode" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Lưu</button>
+                    <a asp-action="Index" class="btn btn-secondary ml-2">Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,32 @@
+﻿@model WebsiteNoiBoCongTy.Models.Department
+
+@{
+    ViewData["Title"] = "Xóa Phòng ban";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1>Xóa Phòng ban</h1>
+    <h3>Bạn có chắc chắn muốn xóa phòng ban này?</h3>
+    
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin Phòng ban</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4">Tên phòng ban</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.Name)</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="mt-4">
+        <input type="hidden" asp-for="DepartmentId" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+    </form>
+</div>
