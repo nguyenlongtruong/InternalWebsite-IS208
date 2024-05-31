@@ -1,0 +1,95 @@
+﻿@model IEnumerable<WebsiteNoiBoCongTy.Models.News>
+
+@{
+    ViewData["Title"] = "Bản tin";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebsiteNoiBoCongTy</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebsiteNoiBoCongTy.styles.css" asp-append-version="true" />
+    <link href="~/css/styles.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f7f9fc; 
+        }
+        .news-card {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .news-card .card-header {
+            font-weight: bold;
+            font-size: 1.2rem;
+            background-color: #e9f2fb; 
+            border-bottom: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .news-card .card-body {
+            font-size: 1rem;
+            background-color: #ffffff; 
+        }
+        .news-card .card-footer {
+            font-size: 0.9rem;
+            color: #6c757d;
+            background-color: #f7f9fc;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .news-card .details-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .news-card .details-link:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            color: #333; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Bảng tin</h1>
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6">
+                    <div class="card news-card">
+                        <div class="card-header">
+                            @Html.DisplayFor(modelItem => item.NewsTitle)
+                        </div>
+                        <div class="card-body">
+                            <p>@Html.DisplayFor(modelItem => item.Content)</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <span>Người đăng: @Html.DisplayFor(modelItem => item.Author.Fullname)</span>
+                            <span>Ngày tạo: @Html.DisplayFor(modelItem => item.CreateDate)</span>
+                        </div>
+                        <div class="card-footer text-end">
+                            <a class="details-link" asp-action="Details" asp-route-id="@item.Id">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/app.min.js"></script>
+    <link href="~/css/styles.min.css" rel="stylesheet" />
+</body>
+</html>
