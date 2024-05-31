@@ -1,0 +1,39 @@
+﻿@model WebsiteNoiBoCongTy.Models.Account
+
+@if (Model != null)
+{
+    <div class="birthday-message-container">
+        <h2 class="birthday-message">
+            Chúc mừng sinh nhật @Model.Fullname! Chúc bạn có một ngày vui vẻ 🎉🎉
+        </h2>
+    </div>
+}
+
+<style>
+    .birthday-message-container {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .birthday-message {
+        display: inline-block;
+        font-size: 0.9rem; 
+        padding: 10px;
+        background-color: #ffe4b5; 
+        color: #333; 
+        border-radius: 5px;
+        animation: marquee 10s linear infinite;
+    }
+
+    @@keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+</style>
+
