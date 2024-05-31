@@ -1,0 +1,47 @@
+﻿@model WebsiteNoiBoCongTy.Models.Account
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <h1 class="mt-4">Xóa tài khoản</h1>
+    <div class="card mt-4">
+        <div class="card-body">
+            <h3 class="card-title">Bạn có chắc muốn xóa tài khoản này không?</h3>
+            <div class="card-text">
+                <dl class="row">
+                    <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Username)</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Username)</dd>
+
+                     <dt class="col-sm-3">Họ và tên</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Fullname)</dd>
+
+                    @* <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Password)</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Password)</dd> *@
+
+                     <dt class="col-sm-3">Giới tính</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Gender)</dd>
+
+                     <dt class="col-sm-3">Ngày sinh</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Birthday)</dd>
+
+                     <dt class="col-sm-3">Vị trí làm việc</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Position)</dd>
+
+                     <dt class="col-sm-3">Số điện thoại</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+                     <dt class="col-sm-3">Phòng ban</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Department.Name)</dd>
+                </dl>
+                <form asp-action="Delete" class="mt-4">
+                    <input type="hidden" asp-for="AccountId" />
+                    <button type="submit" class="btn btn-danger">Xóa</button>
+                    <a asp-action="Index" class="btn btn-secondary ml-2">Quay lại</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

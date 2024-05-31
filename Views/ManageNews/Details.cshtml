@@ -1,0 +1,76 @@
+﻿@model WebsiteNoiBoCongTy.Models.News
+
+@{
+    ViewData["Title"] = "Chi tiết bản tin";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<head>
+<style>
+        .news-details-card {
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+        .news-details-card .card-header {
+            font-weight: bold;
+            font-size: 1.5rem;
+            background-color: #e9f2fb;
+            border-bottom: none;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 15px;
+        }
+        .news-details-card .card-body {
+            font-size: 1rem;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .news-details-card .card-footer {
+            font-size: 0.9rem;
+            color: #6c757d;
+            background-color: #f7f9fc;
+            border-top: none;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 15px;
+        }
+        .news-details-card dt {
+            font-weight: bold;
+        }
+        .back-link {
+            text-decoration: none;
+            color: #007bff;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card news-details-card">
+            <div class="card-header">
+                Chi tiết bảng tin
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-3">Tiêu đề</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.NewsTitle)</dd>
+
+                    <dt class="col-sm-3">Nội dung</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Content)</dd>
+
+                    <dt class="col-sm-3">Ngày tạo</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.CreateDate)</dd>
+
+                    <dt class="col-sm-3">Người đăng</dt>
+                    <dd class="col-sm-9">@Html.DisplayFor(model => model.Author.Fullname)</dd>
+                </dl>
+            </div>
+            <div class="card-footer text-end">
+                <a class="back-link" asp-action="Index">Quay lại</a>
+            </div>
+</div>
+</body>
