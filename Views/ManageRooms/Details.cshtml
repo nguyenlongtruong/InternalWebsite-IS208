@@ -1,0 +1,32 @@
+﻿@model WebsiteNoiBoCongTy.Models.Room
+
+@{
+    ViewData["Title"] = "Chi tiết Phòng";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h1>Chi tiết Phòng</h1>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Thông tin phòng</h4>
+                    <hr />
+                    <dl class="row">
+                        <dt class="col-sm-4">Mã phòng</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.RoomCode)</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-primary">Chỉnh sửa</a>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </div>
+</div>
