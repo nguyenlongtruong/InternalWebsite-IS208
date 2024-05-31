@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "72XsiLt8YlpxVFTKfLn4LkX9zHEWIZtSdIltzLNAlq2svfIPlVVg72KLKgqzMqbVXDOazpAAFNXilBO39u+wpw==",
+  "dgSpecHash": "mNcBsSwcPfX/8Vgs0q1vC4YsAD1zL+ULgqC3vM6TjwXBmY8/L9yV/Cn4AEz7+LDwxGAYN2eo+Jxhl/XMHT9WCA==",
   "success": true,
-  "projectFilePath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
+  "projectFilePath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\CK\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

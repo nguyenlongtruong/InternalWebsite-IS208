@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {}
+    "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\CK\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {}
   },
   "projects": {
-    "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {
+    "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\CK\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
+        "projectUniqueName": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\CK\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
         "projectName": "WebsiteNoiBoCongTy",
-        "projectPath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
+        "projectPath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\CK\\InternalWebsite-IS208\\WebsiteNoiBoCongTy.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\DoAnDemo\\InternalWebsite-IS208\\obj\\",
+        "outputPath": "D:\\DL_E\\HK2_Nam3\\IS208_QLDA_CNTT\\ThucHanh\\CK\\InternalWebsite-IS208\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"

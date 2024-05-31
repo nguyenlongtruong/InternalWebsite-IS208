@@ -19,10 +19,10 @@
     "WebsiteNoiBoCongTyContext": "Data Source=DESKTOP-8RNBQGL\\SQLSERVER;Initial Catalog=WebsiteNoiBo;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False"
   }
 
- <p> thay đổi DESKTOP-8RNBQGL\\SQLSERVER bằng SQL Server của bạn, bạn có thể xenmtrong SQL Server tại phần Properties</p>
+ <p> thay đổi DESKTOP-8RNBQGL\\SQLSERVER bằng SQL Server của bạn, bạn có thể xen trong SQL Server tại phần Properties</p>
 
 ## 4. Chạy dự án
-<p> Tại Terminal, chạy lệnh dotnet build để tiến hành build dự án, sau đó chạy lệnh dotnet run để chạy dự án</p>
+<p> Tại Terminal, chạy lệnh "dotnet build" để tiến hành build dự án, sau đó chạy lệnh "dotnet run" để chạy dự án</p>
   
 
 
